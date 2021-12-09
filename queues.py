@@ -39,3 +39,11 @@ class Queue:
                 return item_to_remove.get_value()
         else:
             print("The queue is totally empty!")
+
+    def peek(self):
+        if self.size > 0:
+            return self.head.get_value()
+        else:
+            print("The queue is empty.")
+
+    
